@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <Header>
+        
+        <div class="left-hdr">
+            <div>
+                <img src="images/qh-logo.png" alt="">
+            </div>
+            <div class="field">
+                <div class="txt-box">
+                    <i class="fas fa-search icon"></i>
+                    <input type="text" class="input" placeholder="Jobs,People,Courses">
+                </div>
+                
+                <button class="btn">Search</button>
+            </div>
+        </div>
+        <div class="right-hdr">
+            <div class="grp">
+                <i class="fas fa-graduation-cap"></i>
+                <p>Courses</p>
+            </div>
+            <div class="grp" id="people">
+                <i class="fas fa-users"></i>
+                <p>People</p>
+            </div>
+            <div class="grp">
+                <i class="far fa-address-card"></i>
+                <p>Recruit</p>
+            </div>
+            <div class="grp">
+                <i class="fas fa-wallet"></i>
+                <p>Jobs</p>
+            </div>
+            <div>
+                <img src="images/my.jpg" alt="" class="my">
+            </div>
+        </div>
+    </Header>
+
+<div class="content">
+    <div class="top" id="top">
+        <div id="cnt">
+            <h1 class="small" >No of Quiz:<span id="number">30</span></h1>
+            <h3>Time Left: <span id="count">60</span></h3>
+        </div>
+        
+        <h1 class="head">Quiz </h1>
+        <h1 class="small">Mark:10 Each</h1>
+    </div>
+    
+    <div class="quiz-part" id="quiz-part">
+        <div class="rules" id="rules">
+            <h2>Rules:</h2>
+            <p>1. You need to attend 30 Quiz</p>
+            <p>2. Each Quiz carries 10points each</p>
+            <p>3. Each question should be answered within 60 seconds.</p>
+            <p>4. You need to choose an option and click Next button for next question</p>
+            <p>5. Percentage is Calculated at End</p>
+            <p>6. Users who score above 50% will get Certificate.</p>
+            <p>7. Users who pass the Quiz can download Certificate their own</p>
+            <p>8. Users who scores less than 50% dont lose hope understand the concepts from course and attend it.</p>
+            <div>
+                <h2 class="tnk">Thank you</h2>
+                <button id="strt">Start</button>
+            </div>
+        </div>
+        <div id="main" class="hide">
+            <h1 class="question" id="question">Question</h1>
+            <div id="answer-buttons" class="btn-grid">
+            </div>
+            <button id="next-btn" class="hide">Next</button>
+        </div>
+
+
+        <div class="cert hide" id="pass">
+            <h2>You passed the test</h2>
+            <div>
+            <h1>Score</h1>
+            <p id="score"></p>
+            </div>
+            <button class="next" id="download">Download Certificate</button>
+        </div>
+
+
+        <div class="fail hide" id="fail">
+            <h2>Better Luck Next Time</h2>
+            <p>Learn concepts clearly and attend Quiz! Dont lose Hope</p>
+            <div>
+            <h1>Score</h1>
+            <p id="score-fail"></p>
+            </div>
+            <button id="reset" onclick={window.location.reload()}>Reset</button>
+        </div>
+    </div>
+    
+
+
+</div>
+
+    <Footer>
+        <div class="container">
+        <div class="left-ftr">
+            <div>
+                <img src="images/qh-logo.png" alt="">
+                <p>QUANTUMHUNTS is a career platform for connecting job seekers and job providers. We help companies build amazing team and build awesome products and services.</p>
+            </div>
+        </div>
+
+        <div class="right-ftr">
+        <div>
+            <h1>COMPANY</h1>
+            <P>About Us</P>
+            <P>Solutions</P>
+            <P>Approach</P>
+            <P>Events</P>
+        </div>
+        <div>
+            <h1>CAREER</h1>
+            <p>Culture</p>
+            <p>Careers</p>
+            <p>Jobs</p>
+        </div>
+        <div>
+            <h1>SUPPORT</h1>
+            <p>Contact</p>
+            <p>Employeer Feedback</p>
+            <p>Location</p>
+            <p>Privacy</p>
+        </div>
+    </div>
+</div>
+    </Footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
